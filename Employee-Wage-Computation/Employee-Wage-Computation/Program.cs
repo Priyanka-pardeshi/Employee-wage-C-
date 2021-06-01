@@ -12,10 +12,9 @@ namespace Employee_Wage_Computation
         {
             Console.WriteLine("Greating Employee !");
             //Creating object for an Employee_attendance Class
-            Employee_Attendance EmpObj = new Employee_Attendance();
-
-            //Calling EmpPresent Method 
-            EmpObj.EmpPresent();
+            Employee employee = new Employee();
+            employee.WageCalculation();
+          
             Console.ReadKey();
         }
     }
