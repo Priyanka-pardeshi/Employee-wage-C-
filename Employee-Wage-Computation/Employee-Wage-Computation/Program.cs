@@ -12,8 +12,8 @@ namespace Employee_Wage_Computation
         {
             Console.WriteLine("Greating Employee !");
             //Creating object for an Employee_attendance Class
-            Employee employee = new Employee();
-            employee.WageCalculation();
+            EmloyeeWage employee = new EmloyeeWage();
+            employee.showSalary();
           
             Console.ReadKey();
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Employee_Wage_Computation;
 
 namespace Employee_Wage_Computation
 {
@@ -40,8 +41,20 @@ namespace Employee_Wage_Computation
                 }
                 totalWorkingHour += empHour;
             }
+
+        }
+        public void showSalary()
+        {
             int salary = totalWorkingHour * empRatePerHour;
             Console.WriteLine(salary);
         }
     }
+    class EmloyeeWage : Employee
+    {
+        public void showSalaryMsg()
+        {
+            Console.WriteLine("EmployeeWage  inheriting an class employee");
+        }
+    }
+
 }
